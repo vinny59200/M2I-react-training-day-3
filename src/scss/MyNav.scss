@@ -1,0 +1,12 @@
+.bg{
+    background-color: #F67280   !important;
+}
+
+.navbar-nav :hover,.navbar-brand :hover,
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: pink;
+}
+.dropdown-menu,.basic-nav-dropdown,.dropdown-item,.dropdown-item:hover{
+    background-color: #F67280;
+}

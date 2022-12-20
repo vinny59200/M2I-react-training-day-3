@@ -1,0 +1,11 @@
+/* global configuration  of colors, fonts, etc*/
+
+:root{
+    --background: #355C7D    ;
+    --color-primary: #333    ;
+    --color-secondary: #333 ;
+    /*etc*/
+}
+
+/* bootsrao style sheet */
+@import "~bootstrap/scss/bootstrap";

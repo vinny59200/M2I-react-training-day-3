@@ -1,0 +1,20 @@
+/* style sheet for the header*/
+
+
+header{
+    background: #F8B195         ;
+    display:flex;
+    img{
+        width: auto;
+        height:20%;
+        max-height: 200px;
+    }
+    h1{
+        font-size: 3.5em;
+        color:var(--color-primary)
+    }
+    h2{
+        font-size: 2em;
+        color: var(--color-primary)
+    }
+}

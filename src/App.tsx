@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import './App.scss';
+import MyOrders from './components/MyOrders'
+import OrderModel from './models/OrderModel'
 function App() {
+
+let orders:OrderModel[]=[
+  new OrderModel(1,5, 20, 'CONFIRMED','Training', 'M2I',1200, 'Android'),
+  new OrderModel(2,4, 20, 'CONFIRMED','Training', 'Orsys',1500, 'Angular'),
+  new OrderModel(3,3, 20, 'OPTION','Training', 'M2I',1200, 'React'),
+  new OrderModel(4,5, 20, 'CANCELED','Training', 'VMWare',1200, 'Spring')
+]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <MyOrders orders={orders}/>
     </div>
   );
 }
