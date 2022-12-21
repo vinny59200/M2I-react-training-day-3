@@ -48,7 +48,7 @@
       "customer": "Azul",
       "fee": 5000,
       "comment": "Java ",
-      "status": "OPTION"
+      "status": "CONFIRMED"
     },
     {
       "id": 373624,
@@ -59,16 +59,50 @@
       "customer": "US Air Force",
       "fee": 1250,
       "comment": "HTML"
+    },
+    {
+      "id": 802,
+      "dayCount": 3,
+      "tva": 20,
+      "status": "CANCELED",
+      "type": "Practice",
+      "customer": "Altair",
+      "fee": 1500,
+      "comment": "Quantic computing"
     }
   ],
   "customers": [
     {
       "name": "Christophe2",
       "tva": 20,
-      "status": "ACTIVE",
+      "status": "REJECTED",
       "comment": "Yeah",
       "id": 1,
       "turnover": 1321312
+    },
+    {
+      "id": 109040,
+      "name": "Bob",
+      "tva": 20,
+      "turnover": 1525,
+      "status": "ARCHIVED",
+      "comment": "Bricolage"
+    },
+    {
+      "id": 932357,
+      "name": "JetBrains",
+      "tva": 20,
+      "turnover": 5000000,
+      "status": "ACTIVE",
+      "comment": "Tooling"
+    },
+    {
+      "id": 676831,
+      "name": "Mixter",
+      "tva": 20,
+      "turnover": 10500,
+      "status": "ARCHIVED",
+      "comment": "DJ improvisation"
     }
   ]
 }

@@ -5,7 +5,13 @@ import OrderModel from "./models/OrderModel";
 import axios from "axios";
 import OrderForm from "./components/OrderForm";
 import React from "react";
+import MySlot from "./components/MySlot";
+import {useSelector, useDispatch} from 'react-redux'
+import { increment,selectCount } from "./redux/counterSlice";
 function App() {
+
+const count = useSelector(selectCount);
+
   const logVV3 = (str: OrderModel) => {
     // console.log("VV3" + str);
     console.log(str.id);
@@ -67,6 +73,10 @@ function App() {
       <ErrorBoundary2>
         <ButtonComponent />
       </ErrorBoundary2>
+      <MySlot><span>Just a tiny Slot component test</span>
+      <h3>still in my slot</h3>
+      <h4>count from redux: {count}</h4></MySlot>
+
       <OrderForm insertVV={insert} />
     </div>
   );

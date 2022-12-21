@@ -11,13 +11,15 @@ import OrderInsertion from "./components/OrderInsertion";
 import MyCustomers from "./components/MyCustomers";
 import CustomerInsertion from "./components/CustomerInsertion";
 import ErrorBoundary from './components/ErrorBoundary'
-
+import {Provider} from 'react-redux'
+import {store} from './redux/store'
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 
 root.render(
   <React.StrictMode>
+    <Provider store={store}>
     <ErrorBoundary>
       <MyHeader title={"Vincent VAUBAN"} punchline={"VV TGV"} />
       <Router>
@@ -32,6 +34,7 @@ root.render(
       </Router>
       <MyFooter />
     </ErrorBoundary>
+    </Provider>
   </React.StrictMode>
 );
 

@@ -5,6 +5,10 @@ import Table from "react-bootstrap/Table";
 import CustomerModel from "../models/CustomerModel";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import CustomerForm from "./CustomerForm";
+import {useSelector, useDispatch} from 'react-redux'
+import { increment,selectCount } from "../redux/counterSlice";
+// import MyCounter from "./MyCounter";
 /*
 "name": "Christophe",
       "tva": 20,
@@ -16,6 +20,7 @@ import { useState, useEffect } from "react";
 const MyCustomers = (props: any) => {
   const [isLoading, setLoader] = useState(true);
   const [customers, setCustomers] = useState([]);
+  const count = useSelector(selectCount);
 
   const logVV2 = (str: CustomerModel) => {
     console.log(str.id);
@@ -89,7 +94,9 @@ const MyCustomers = (props: any) => {
           />
         ))}
       </tbody>
-    </Table></div>
+    </Table><br/>
+    <span>Count from redux: {count}</span>
+    <CustomerForm insertVV={insert}/></div>
   );
 };
 
