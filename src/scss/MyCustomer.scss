@@ -1,14 +1,14 @@
-.OPTION {
-	background-color: orange !important;
+.ARCHIVED {
+	background-color: darkslategrey !important;
 	--bs-table-accent-bg: transparent !important;
 	color:white;
 }
-.CANCELED {
+.REJECTED {
 	background-color: red !important;
 	--bs-table-accent-bg: transparent !important;
 	color:white;
 }
-.CONFIRMED {
+.ACTIVE {
 	background-color: lightseagreen !important;
 	--bs-table-accent-bg: transparent !important;
 	color:white;

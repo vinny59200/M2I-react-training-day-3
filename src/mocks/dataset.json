@@ -1,0 +1,74 @@
+{
+  "orders": [
+    {
+      "fee": 1200,
+      "dayCount": 1,
+      "tva": 20,
+      "status": "OPTION",
+      "type": "Formation",
+      "customer": "M2I",
+      "comment": "Thank you VV",
+      "id": 21
+    },
+    {
+      "fee": 1200,
+      "dayCount": 100,
+      "tva": 20,
+      "status": "CONFIRMED",
+      "type": "Coaching",
+      "customer": "ATOS",
+      "comment": "Merci Atos",
+      "id": 3
+    },
+    {
+      "id": 721981,
+      "dayCount": 10,
+      "tva": 20,
+      "status": "CANCELED",
+      "type": "Training2",
+      "customer": "VV",
+      "fee": 500,
+      "comment": "Easyteam Star"
+    },
+    {
+      "id": 370403,
+      "dayCount": 5,
+      "tva": 20,
+      "status": "CONFIRMED",
+      "type": "Coaching",
+      "customer": "Infotel",
+      "fee": 4875,
+      "comment": "PCIDSS2"
+    },
+    {
+      "id": 567316,
+      "dayCount": 2,
+      "tva": 20,
+      "type": "Bug shooting",
+      "customer": "Azul",
+      "fee": 5000,
+      "comment": "Java ",
+      "status": "OPTION"
+    },
+    {
+      "id": 373624,
+      "dayCount": 2,
+      "tva": 20,
+      "status": "CONFIRMED",
+      "type": "Training",
+      "customer": "US Air Force",
+      "fee": 1250,
+      "comment": "HTML"
+    }
+  ],
+  "customers": [
+    {
+      "name": "Christophe2",
+      "tva": 20,
+      "status": "ACTIVE",
+      "comment": "Yeah",
+      "id": 1,
+      "turnover": 1321312
+    }
+  ]
+}

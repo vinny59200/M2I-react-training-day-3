@@ -1,0 +1,52 @@
+{
+  "orders": [
+    {
+      "fee": 1200,
+      "dayCount": 100,
+      "tva": 20,
+      "status": "CONFIRMED",
+      "type": "Formation",
+      "customer": "Modus",
+      "comment": "Merci Modus pour les 120K",
+      "id": 1
+    },
+    {
+      "fee": 1200,
+      "dayCount": 1,
+      "tva": 20,
+      "status": "CANCELED",
+      "type": "Formation",
+      "customer": "M2I",
+      "comment": "Merci M2I",
+      "id": 21
+    },
+    {
+      "fee": 1200,
+      "dayCount": 100,
+      "tva": 20,
+      "status": "OPTION",
+      "type": "Coaching",
+      "customer": "ATOS",
+      "comment": "Merci Atos",
+      "id": 3
+    }
+  ],
+  "customers": [
+    {
+      "nom": "Christophe",
+      "tva": 20,
+      "totalCaHt": 12000,
+      "status": "ACTIVE",
+      "comment": "Commentaire pour customer Christophe",
+      "id": 1
+    },
+    {
+      "status": "INACTIVE",
+      "tva": 20,
+      "id": 2,
+      "nom": "Modus",
+      "totalCaHt": 120000,
+      "comment": "Commentaire pour customer Modus"
+    }
+  ]
+}

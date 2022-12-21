@@ -13,7 +13,7 @@ const MyFooter = () => {
 
 //hook useEffect = componentDidMount + componentDidUpdate
 useEffect(()=>{
-  console.log('loaded');
+  // console.log('loaded');
 })// or useEffect (() => {...},[]) for only componentDidMount
 
 
